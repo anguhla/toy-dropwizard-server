@@ -23,9 +23,9 @@ steps:
       chmod +x gradlew
       ./gradlew build -x test
 
-  - name: Run tests!!
+  - name: Build with gradle!
     working-directory: .
     run: |
-    chmod +x gradlew
-    ./gradlew test
-    
+      chmod +x gradlew
+      ./gradlew test
+
