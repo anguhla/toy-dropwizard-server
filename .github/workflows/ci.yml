@@ -10,20 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
 steps:
-  - uses: actions/checkout@v1
+  -uses: actions/checkout@v1
 
-  - name: Install Java
+  -name: Install Java
     uses: actions/setup-java@1
     with:
       java-version: "11"
 
-  - name: Build with gradle!
+  -name: Build with gradle!
     working-directory: .
     run: |
       chmod +x gradlew
       ./gradlew build -x test
 
-  - name: Build with gradle!
+  -name: Build with gradle!
     working-directory: .
     run: |
       chmod +x gradlew
